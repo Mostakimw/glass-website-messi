@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    min-height: 100vh;
+    background: linear-gradient( to right top,  #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass {
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    border-radius: 25px;
+    /* z-index: 2; */
+    backdrop-filter: blur(100rem);
+}
+.circle1, .circle2 {
+    height: 20rem;
+    width: 20rem;
+    background: white;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {  
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 { 
+    bottom: 5%;
+    left: 10%;
+}
+
+/* -----------------------------------------left row design */
+
+
+.container .glass .row {
+    display: flex;
+    height: 80vh;   
+}
+.container .glass .row .personal {
+    width: 25%;  
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;   
+}
+.container .glass .row .personal .name {
+    text-align: center;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.container .glass .row .personal .name img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+}
+.container .glass .row .personal .name h2 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #193a2aaf;
+}
+.container .glass .row .personal .name p {
+    font-size: 12px;
+    color: #33695fd8;
+}
+
+.container .glass .row .personal .activity {
+    margin-left: 45px;
+    padding-top: 30px;
+    line-height: 22px;
+    line-height: 55px;
+}
+.container .glass .row .personal .activity strong {
+    padding: 0 25px;
+    color: #224942;
+}
+.container .glass .row .personal .activity i {
+    color: #65dfc9;
+    font-size: 25px;
+}
+.container .glass .row .personal .join-pro {
+    background: #65dfc9;
+    border-radius: 25px;
+    margin: 25px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.container .glass .row .personal .join-pro h2 {
+    color: white;
+    padding: 15px 10px;
+    
+}
+.container .glass .row .personal .join-pro i {
+    font-size: 55px;
+    padding-left: 5px;
+    color: coral;
+}
+
+/* <!-- -------------------------------------Active Games Section --> */
+
+.active-games {
+    margin-left: 30px;
+}
+.active-games .header {
+    margin-top: 25px;
+    margin-bottom: 55px;
+    
+}
+.active-games .header h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #5fa799;
+}
+.active-games .header .line {
+    width: 220px;
+    height: 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255,0.4);
+    margin-top: 6px;
+}
+
+.active-games .row-3 {
+    margin-top: 20px;
+}
+.active-games .row-3 .games {
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 10px;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+.active-games .row-3 .games img {
+    border-radius: 15px;
+    padding-right: 55px;
+    /* border: 2px solid red; */
+}
+.active-games .row-3 .games .game-details {
+    padding-right: 45px;
+    line-height: 25px;
+}
+.active-games .row-3 .games .game-details h2 {
+    font-size: 16px;
+    color: #69978f;
+}
+.active-games .row-3 .games .game-details p {
+    color: #67817c;
+    padding-bottom: 8px;
+}
+.active-games .row-3 .games .game-details progress {
+    height: 30px;
+    width: 300px;   
+    background: salmon;   
+}
+progress::-webkit-progress-value {
+    background: #65dfc9;    
+}
+.active-games .row-3 .games .percentage {
+    font-size: 20px;
+    font-weight: 700;
+    color: #65dfc9;
+}
+
+ 
